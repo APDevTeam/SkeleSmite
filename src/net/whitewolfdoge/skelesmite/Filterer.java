@@ -16,11 +16,11 @@ public class Filterer{
 	@SuppressWarnings("deprecation")
 	protected static void filterEntityHorseSkeleton(Entity rawEnt){
 		if(rawEnt instanceof Horse && ((Horse)rawEnt).getVariant().equals(Variant.SKELETON_HORSE)){
-				rawEnt.remove(); // Remove it
-				int x = rawEnt.getLocation().getBlockX(), y = rawEnt.getLocation().getBlockY(), z = rawEnt.getLocation().getBlockZ();
-				World wld = rawEnt.getWorld();
-				String msg = String.format("[SkeleSmite] Purged Skeleton Horse at (%d, %d, %d) in %s!", x, y, z, wld.getName());
-				Bukkit.getLogger().info(msg);
+			int x = rawEnt.getLocation().getBlockX(), y = rawEnt.getLocation().getBlockY(), z = rawEnt.getLocation().getBlockZ();
+			World wld = rawEnt.getWorld();
+			rawEnt.remove(); // Remove it
+			String msg = String.format("[SkeleSmite] Purged Skeleton Horse at (%d, %d, %d) in %s!", x, y, z, wld.getName());
+			Bukkit.getLogger().info(msg);
 		}
 	}
 }
