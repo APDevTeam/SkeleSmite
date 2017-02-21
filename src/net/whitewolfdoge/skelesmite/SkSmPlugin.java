@@ -6,7 +6,7 @@ import org.bukkit.event.world.ChunkLoadEvent;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class SkSmPlugin extends JavaPlugin{
-	Listener spawnMon, chkMon;
+	private Listener spawnMon, chkMon;
 	
 	@Override
 	public void onLoad(){
