@@ -1,5 +1,5 @@
 name: SkeleSmite
-version: 0.1
+version: 0.2-release
 description: Removes Skeleton Horses from the game
 author: Emily J. White
 main: net.whitewolfdoge.skelesmite.SkSmPlugin
