@@ -17,6 +17,7 @@ public class SkSmPlugin extends JavaPlugin{
 	@Override
 	public void onEnable(){
 		getServer().getPluginManager().registerEvents(spawnMon, this);
+		getServer().getPluginManager().registerEvents(chkMon, this);
 	}
 	
 	@Override
