@@ -1,4 +1,4 @@
-package net.whitewolfdoge.skelesmite;
+package apdevteam.skelesmite;
 
 import org.bukkit.Chunk;
 import org.bukkit.entity.Entity;

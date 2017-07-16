@@ -1,11 +1,11 @@
-package net.whitewolfdoge.skelesmite;
+package apdevteam.skelesmite;
 
 import org.bukkit.event.Listener;
 import org.bukkit.event.entity.EntitySpawnEvent;
 import org.bukkit.event.world.ChunkLoadEvent;
 import org.bukkit.plugin.java.JavaPlugin;
 
-public class SkSmPlugin extends JavaPlugin{
+public final class SkSmPlugin extends JavaPlugin{
 	private Listener spawnMon, chkMon;
 	
 	@Override

@@ -1,4 +1,4 @@
-package net.whitewolfdoge.skelesmite;
+package apdevteam.skelesmite;
 
 import org.bukkit.entity.Horse;
 import org.bukkit.event.EventHandler;
