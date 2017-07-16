@@ -6,7 +6,7 @@
 
     <groupId>APDevTeam</groupId>
     <artifactId>SkeleSmite</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>0.3-Release</version>
     <packaging>jar</packaging>
 
     <name>SkeleSmite</name>
