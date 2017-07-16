@@ -1,5 +1,7 @@
 package apdevteam.skelesmite;
 
+import org.bukkit.Bukkit;
+import org.bukkit.entity.EntityType;
 import org.bukkit.entity.Horse;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -9,7 +11,7 @@ public class SpawnMonitor implements Listener{
 	
 	@EventHandler
 	public void onCreatureSpawnEvent(CreatureSpawnEvent ee){
-		if(ee.getEntity() instanceof Horse && ((Horse)ee.getEntity()).getVariant().equals(Horse.Variant.SKELETON_HORSE))
+		if(ee.getEntityType().equals(EntityType.SKELETON_HORSE))
 			ee.setCancelled(true);
 	}
 }
