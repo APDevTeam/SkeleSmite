@@ -11,7 +11,7 @@ public class SpawnMonitor implements Listener{
 	
 	@EventHandler
 	public void onCreatureSpawnEvent(CreatureSpawnEvent ee){
-		if(ee.getEntityType().equals(EntityType.SKELETON_HORSE))
+		if(ee.getEntityType().equals(EntityType.HORSE) && ((Horse)ee.getEntity()).getVariant().equals(Horse.Variant.SKELETON_HORSE))
 			ee.setCancelled(true);
 	}
 }
